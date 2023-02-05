@@ -11,4 +11,16 @@ public class stringUtils {
             return String.valueOf(text.charAt(index));
         }
     }
+
+    public int countWords(String sentence) {
+        int counting = 0;
+        for (int i = 0; i < sentence.length(); i++) {
+            char symbol = sentence.charAt(i);
+            if (symbol == ' ') {
+                counting++;
+            }
+        }
+        return counting + 1;
+    }
+
 }

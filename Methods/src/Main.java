@@ -18,6 +18,8 @@ public class Main {
         String resultMiddleChars = findMiddleChars.findMiddleCharacters("abcdefghi");
         System.out.println(resultMiddleChars);
 
+        int resultWordCount = findMiddleChars.countWords("This is a simple sentence. It contains multiple words: like nouns, verbs and others!");
+        System.out.println(resultWordCount);
     }
 }
 
