@@ -3,7 +3,7 @@ import java.util.Scanner;  // Import the Scanner class
         import java.io.Console;
         import java.io.*;
 
-class Main {
+class Triangle {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String angle1 = in.nextLine();
@@ -15,7 +15,7 @@ class Main {
         String angle3 = in.nextLine();
         double a3 = Double.parseDouble(angle3);
 
-        if (a1 + a2 + a3 == 180) {
+        if (a1 + a2 + a3 == 180 && a1 > 0 && a2 > 0 && a3 > 0) {
             System.out.println("The triangle can be built based on the angle values");
             if (a1 == a2 && a1 == a3) {
                 System.out.println("The triangle is equilateral");  //равностранен
